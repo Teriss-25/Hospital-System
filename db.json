@@ -1,0 +1,29 @@
+{
+  "users": [
+    { "id": "1", "username": "admin", "password": "admin123", "role": "Admin", "name": "Admin User" },
+    { "id": "2", "username": "doctor", "password": "doctor123", "role": "Doctor", "name": "Dr. James Mwangi" },
+    { "id": "3", "username": "receptionist", "password": "rec123", "role": "Receptionist", "name": "Sarah Kamau" }
+  ],
+  "doctors": [
+    { "id": "1", "name": "Dr. James Mwangi", "specialty": "General Medicine", "phone": "0712345678", "email": "james@medibook.ke", "available": true, "experience": "8 years", "fee": 1500 },
+    { "id": "2", "name": "Dr. Amina Odhiambo", "specialty": "Pediatrics", "phone": "0723456789", "email": "amina@medibook.ke", "available": true, "experience": "12 years", "fee": 2000 },
+    { "id": "3", "name": "Dr. Peter Kariuki", "specialty": "Cardiology", "phone": "0734567890", "email": "peter@medibook.ke", "available": true, "experience": "15 years", "fee": 3000 },
+    { "id": "4", "name": "Dr. Grace Wanjiru", "specialty": "Dermatology", "phone": "0745678901", "email": "grace@medibook.ke", "available": false, "experience": "6 years", "fee": 1800 }
+  ],
+  "patients": [
+    { "id": "1", "name": "John Kamau", "age": 34, "gender": "Male", "phone": "0756789012", "email": "john@gmail.com", "bloodGroup": "O+", "address": "Nairobi, Kenya", "dateRegistered": "2026-01-10" },
+    { "id": "2", "name": "Mary Wanjiku", "age": 28, "gender": "Female", "phone": "0767890123", "email": "mary@gmail.com", "bloodGroup": "A+", "address": "Mombasa, Kenya", "dateRegistered": "2026-02-15" },
+    { "id": "3", "name": "David Otieno", "age": 45, "gender": "Male", "phone": "0778901234", "email": "david@gmail.com", "bloodGroup": "B+", "address": "Kisumu, Kenya", "dateRegistered": "2026-03-20" }
+  ],
+  "appointments": [
+    { "id": "1", "patientId": "1", "patientName": "John Kamau", "doctorId": "1", "doctorName": "Dr. James Mwangi", "date": "2026-05-20", "time": "09:00", "reason": "General checkup", "status": "Confirmed", "fee": 1500 },
+    { "id": "2", "patientId": "2", "patientName": "Mary Wanjiku", "doctorId": "2", "doctorName": "Dr. Amina Odhiambo", "date": "2026-05-21", "time": "10:30", "reason": "Child vaccination", "status": "Pending", "fee": 2000 },
+    { "id": "3", "patientId": "3", "patientName": "David Otieno", "doctorId": "3", "doctorName": "Dr. Peter Kariuki", "date": "2026-05-19", "time": "14:00", "reason": "Heart checkup", "status": "Completed", "fee": 3000 },
+    { "id": "4", "patientId": "1", "patientName": "John Kamau", "doctorId": "4", "doctorName": "Dr. Grace Wanjiru", "date": "2026-05-18", "time": "11:00", "reason": "Skin condition", "status": "Cancelled", "fee": 1800 }
+  ],
+  "billing": [
+    { "id": "1", "patientId": "1", "patientName": "John Kamau", "appointmentId": "1", "amount": 1500, "status": "Paid", "date": "2026-05-20", "method": "M-Pesa" },
+    { "id": "2", "patientId": "3", "patientName": "David Otieno", "appointmentId": "3", "amount": 3000, "status": "Paid", "date": "2026-05-19", "method": "Cash" },
+    { "id": "3", "patientId": "2", "patientName": "Mary Wanjiku", "appointmentId": "2", "amount": 2000, "status": "Unpaid", "date": "2026-05-21", "method": "" }
+  ]
+}
